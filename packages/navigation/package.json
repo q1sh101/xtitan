@@ -2,17 +2,21 @@
   "name": "@xtitan/navigation",
   "version": "0.0.0",
   "description": "Platform-specific navigation facades for XTitan",
-  "main": "./index.web.ts",
-  "types": "./index.web.ts",
-  "react-native": "./index.native.ts",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.web.js",
+  "types": "./dist/index.web.d.ts",
+  "react-native": "./dist/index.native.js",
   "exports": {
     ".": {
-      "types": "./index.web.ts",
-      "react-native": "./index.native.ts",
-      "import": "./index.web.ts"
+      "types": "./dist/index.web.d.ts",
+      "react-native": "./dist/index.native.js",
+      "import": "./dist/index.web.js"
     }
   },
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
@@ -20,8 +24,6 @@
     "typescript": "^5.7.2"
   },
   "files": [
-    "index.web.ts",
-    "index.native.ts",
-    "types.ts"
+    "dist"
   ]
 }

@@ -1,4 +1,12 @@
 {
   "files": [],
-  "references": []
+  "references": [
+    { "path": "./packages/config" },
+    { "path": "./packages/theme" },
+    { "path": "./packages/core" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/navigation" },
+    { "path": "./apps/web" },
+    { "path": "./apps/native" }
+  ]
 }

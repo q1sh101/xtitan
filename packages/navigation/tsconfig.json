@@ -1,8 +1,9 @@
 {
   "extends": "@xtitan/config/tsconfig.base.json",
   "compilerOptions": {
-    "noEmit": true
+    "outDir": "./dist",
+    "rootDir": "."
   },
-  "include": ["."],
-  "exclude": ["node_modules"]
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
