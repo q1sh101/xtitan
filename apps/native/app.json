@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "XTitan Native",
+    "slug": "xtitan-native",
+    "version": "0.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.xtitan.native"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.xtitan.native"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
