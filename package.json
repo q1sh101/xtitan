@@ -1,0 +1,29 @@
+{
+  "name": "@xtitan/monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "XTitan - Cross-platform monorepo (Web, Android, iOS)",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "echo 'Apps not ready yet'",
+    "build": "echo 'Build not configured yet'",
+    "clean": "rm -rf node_modules && pnpm -r clean"
+  },
+  "keywords": [
+    "monorepo",
+    "react",
+    "react-native",
+    "expo",
+    "vite",
+    "typescript"
+  ],
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
