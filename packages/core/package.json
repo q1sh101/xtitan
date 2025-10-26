@@ -1,0 +1,31 @@
+{
+  "name": "@xtitan/core",
+  "version": "0.0.0",
+  "description": "Core utilities for XTitan applications",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./env": {
+      "types": "./env/index.web.ts",
+      "react-native": "./env/index.native.ts",
+      "import": "./env/index.web.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@xtitan/config": "workspace:*",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist",
+    "env"
+  ]
+}
