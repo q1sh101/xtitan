@@ -1,0 +1,12 @@
+{
+  "name": "@xtitan/config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared configuration for XTitan monorepo",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json"
+  },
+  "files": [
+    "tsconfig.base.json"
+  ]
+}
